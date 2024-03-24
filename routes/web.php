@@ -3,6 +3,7 @@
 use App\Http\Controllers\GestorController;
 use Illuminate\Support\Facades\Route;
 use GuzzleHttp\Promise\Create;
+use App\Http\Controllers\FuncionarioController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,6 +18,12 @@ use GuzzleHttp\Promise\Create;
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get ('/gestor',[GestorController::class, 'create'] );
+// route gestor
+Route::get ('/gestor',[GestorController::class, 'create']) -> name('gestor_create') ;
 Route::post('/gestor/novo', [GestorController::class, 'store'])-> name('registrar_gestor');
+// Route::get('/gestor/ver/{gestor}', [GestorController::class, 'show'])->name('gestor.show');
+Route::get('/funcionario', [FuncionarioController::class, 'create']) -> name('funcionario_create');
+Route::post('/funcionario/novo', [FuncionarioController::class, 'store']) -> name('registrar_funcionario');
+
+
+

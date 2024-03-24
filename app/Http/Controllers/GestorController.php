@@ -19,5 +19,9 @@ class GestorController extends Controller
         ]);
         return $mensagem_gestor = "Gestor adicionado no sistema" ;
     }
+    public function show($id){
+        $gestor = Gestor::findOrFail($id);
+        return view('gestor_show', ['gestor' => $gestor]);
+    }
 }
 

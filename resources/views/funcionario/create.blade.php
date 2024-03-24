@@ -7,9 +7,9 @@
     <title>UNICLINI</title>
 </head>
 <body>
-    <form action="{{route('registrar_gestor')}}" method="post">
+    <form action="{{route('registrar_funcionario')}}" method="post">
         @csrf
-        <h1>Cadastro de Diretor </h1> <br>
+        <h1>Cadastro da Recepção </h1> <br>
     <label for="nome"> Nome: </label > <br>
         <input type="text" name="nome" required> <br>
     <label for="email">Email: </label> <br>
