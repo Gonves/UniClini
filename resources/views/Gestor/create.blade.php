@@ -7,15 +7,16 @@
     <title>UNICLINI</title>
 </head>
 <body>
-    <form action="{{route('registrar_gestor')}}" method="POST">
-    <label for=""> Nome </label > <br>
-        <input type="text" name="Nome" required> <br>
-    <label for="">Senha</label> <br>
-        <input type="password" name="Senha" required> <br>
-    <label for="">Email</label> <br>
-        <input type="text" name="Email" required> <br>
-      <button type="submit" name="Enviar"> ENVIARr  </button>
-
+    <form action="{{route('registrar_gestor')}}" method="post">
+        @csrf
+    <label for="nome"> Nome: </label > <br>
+        <input type="text" name="nome" required> <br>
+    <label for="email">Email: </label> <br>
+        <input type="email" name="email" required> <br>
+    <label for="senha">Senha: </label> <br>
+        <input type="password" name="senha" required> <br>
+      <button> ENVIAR </button>
+    
     </form>
 </body>
 </html>

@@ -13,10 +13,11 @@ class GestorController extends Controller
     }
     public function store(Request $request){
         $gestor = Gestor::create([
-            'nome'=>  $request -> input ('nome'),
-            'email'=> $request -> input ('email'),
-            'senha'=> $request -> input ('senha'),
+            'nome'  =>   $request -> input ('nome'),
+            'email' =>   $request -> input ('email'),
+            'senha' =>   $request -> input ('senha'),
         ]);
+        return $mensagem_gestor = "Gestor adicionado no sistema" ;
     }
 }
 
