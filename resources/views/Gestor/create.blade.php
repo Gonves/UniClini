@@ -14,7 +14,7 @@
         <input type="password" name="Senha" required> <br>
     <label for="">Email</label> <br>
         <input type="text" name="Email" required> <br>
-      <button type="submit" name="Enviar"> ENVIAR  </button>
+      <button type="submit" name="Enviar"> ENVIARr  </button>
 
     </form>
 </body>
