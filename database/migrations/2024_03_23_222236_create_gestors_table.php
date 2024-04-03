@@ -14,8 +14,11 @@ return new class extends Migration
         Schema::create('gestors', function (Blueprint $table) {
             $table->id();
             $table -> string('nome');
+            $table -> string('cpf')->unique() ;
             $table -> string('senha');
-            $table -> string ('email');
+
+
+
             $table->timestamps();
         });
     }

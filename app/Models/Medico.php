@@ -5,13 +5,17 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Funcionario extends Model
+class Medico extends Model
 {
-    protected $fillable = [ //fillable vai entender que o que esta dentro do array vai ser editado ou modificado
+    protected $fillable = [
         'nome',
         'cpf',
         'senha',
-        'funcao'
-]   ;
+        'especialidade',
+
+
+    ];
+    protected $hidden = [];
+
     use HasFactory;
 }

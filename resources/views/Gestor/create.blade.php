@@ -12,8 +12,8 @@
         <h1>Cadastro de Diretor </h1> <br>
     <label for="nome"> Nome: </label > <br>
         <input type="text" name="nome" required> <br>
-    <label for="email">Email: </label> <br>
-        <input type="email" name="email" required> <br>
+    <label for="cpf">cpf: </label> <br>
+        <input type="tel" name="cpf" required> <br>
     <label for="senha">Senha: </label> <br>
         <input type="password" name="senha" required> <br>
       <button> ENVIAR </button>

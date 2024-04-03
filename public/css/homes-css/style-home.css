@@ -1,0 +1,116 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ------------- Raiz com Variáveis --------------- */
+:root{
+    --color1: #F7F7F7;
+    --color2: #80AAA8;
+    --color3: #025955;
+    --color4: #015450;
+}
+
+/* ------------- Configuralções gerais --------------- */
+
+*{
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 250;
+    font-style: normal;
+    color: var(--color4);
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    margin: auto;
+    height: 81vh;
+}
+
+/* ------------- Cabeçalho --------------- */
+header{
+    height: 96px;
+    position: relative;
+}
+
+header h1{
+    font-weight: 300;
+    font-size: 32px;
+    background-color: #FFFF;
+    width: 210px;
+    left: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    
+}
+
+.menu{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 2%;
+    
+}
+
+.menu a{
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 360;
+}
+
+/* ------------- Conteúdo Principal --------------- */
+
+.principal{
+    background-color: var(--color4);
+    height: 520px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container1 h1{
+    color: #FFFF;
+    font-size: 3.2em;
+}
+
+.container2 p{
+    color: #FFFF;
+    width: 25em;
+    line-height: 1.8em;
+    font-size: 20px;
+}
+#linha{
+    width: 4em;
+    border: 1px solid #FFFF;
+    margin-top: 20px;
+}
+.botoes{
+    width: 400px;
+    columns: 2;
+}
+
+.botoes button{
+    width: 185px;
+    padding: 7px 7px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 350;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid var(--color4);
+    transition: .5s;
+    box-shadow: 0px 0px 1px black;
+}
+.botoes button:hover{
+    color: #FFFF;
+    background-color: var(--color2);
+}
+
+/* ------------- Rodapé --------------- */
+
+footer  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

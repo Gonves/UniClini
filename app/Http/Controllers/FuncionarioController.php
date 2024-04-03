@@ -15,9 +15,10 @@ class FuncionarioController extends Controller
     public function store(Request $request){
         $funcionario = Funcionario::create([
             'nome' => $request -> input('nome'),
-            'email' => $request -> input('email'),
-            'senha' => $request -> input('senha')
+            'cpf' => $request -> input('cpf'),
+            'senha' =>   $request -> input ('senha'),
+            'funcao' => $request -> input('funcao')
         ]);
-        return $mensagem_funcionario = "Funcionario adicionado no sistema, seja bem-vindo" ;
+        return $mensagem_funcionario = "Funcionario cadastrado com sucesso" ;
     }
 }

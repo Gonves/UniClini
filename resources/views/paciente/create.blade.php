@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paciente</title>
+    <link rel="stylesheet" href="../../css/formularios-css/funPacMed.css">
+</head>
+<body>
+<!--CABEÇALHO -->
+        <header>
+            <h1>Med Software</h1>
+            <nav class="menu">
+                <a href="#">Início</a>
+                <a href="#">Configurações</a>
+            </nav>
+        </header>
+<!--CABEÇALHO -->
+
+
+<!--PRINCIPAL -->
+   <main>
+    <div class="login-container">
+        <div class="form-container">
+            <h2>Cadastro de Paciente</h2>
+            <p class="subtitle">Por favor, adicione as informações do paciente.</p>
+            <br>
+
+            <form class="form" action="{{route('registrar_paciente')}}" method="post">
+                    <!--SEPARANDO OS CAMPOS DO BOTAO DE ENVIAR DADOS-->
+                    <div class="container-extra">
+                        <!--NOME-->
+                        <div>
+                            <p>Nome completo:</p>
+                            <input type="text" name="nome" id="nome" placeholder="Nome completo">
+                        </div>
+                        <!--EMAIL-->
+                        <div>
+                            <p>Email</p>
+                            <input type="email" name="email" id="email" placeholder="Email">
+                        </div>
+                        <!-- CPF -->
+                        <div>
+                            <P>CPF:</P>
+                            <input type="tel" name="cpf" id="cpf" placeholder="CPF">
+                        </div>
+                    </div>
+                <!--botão-->
+                <input type="submit" name="submit" class="submit" id="submit" value="Enviar"></input>
+            </form>
+
+        </div>
+
+    </div>
+</main>
+<!--PRINCIPAL -->
+
+<!--RODAPÉ -->
+<footer>
+    <h2>Med Software</h2>
+    <p>©️2024 Galerinha Corporation</p>
+</footer>
+<!--RODAPÉ -->
+
+</body>
+</html>

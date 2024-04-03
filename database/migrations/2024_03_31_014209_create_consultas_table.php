@@ -11,14 +11,16 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('funcionarios', function (Blueprint $table) {
-            $table->id();
-            $table -> string('nome');
-            $table -> string('cpf')->unique();
-            $table -> string('senha');
+        {
+            Schema::create('consultas', function (Blueprint $table) {
+                $table->id();
+                $table -> string('nome_consulta');
+                $table -> string('duracao_consulta');
+                $table->timestamps();
 
-            $table->timestamps();
-        });
+
+            });
+        }
     }
 
     /**
@@ -26,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('funcionarios');
+        Schema::dropIfExists('consultas');
     }
 };
