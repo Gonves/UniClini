@@ -15,7 +15,7 @@ return new class extends Migration
             Schema::create('consultas', function (Blueprint $table) {
                 $table->id();
                 $table -> string('nome_consulta');
-                $table -> string('duracao_consulta');
+                $table -> string('descricao_consulta');
                 $table->timestamps();
 
 

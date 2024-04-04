@@ -16,7 +16,7 @@ return new class extends Migration
             $table -> string('nome');
             $table -> string('cpf')->unique();
             $table -> string('senha');
-
+            $table -> string('funcao');
             $table->timestamps();
         });
     }

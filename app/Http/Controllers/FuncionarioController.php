@@ -7,18 +7,22 @@ use Illuminate\Http\Request;
 
 class FuncionarioController extends Controller
 {
-    public function create(){
+    public function create()
+    {
         $funcionario = Funcionario::all();
         return view('Funcionario.create');
     }
 
-    public function store(Request $request){
+    public function store(Request $request)
+    {
+
+
         $funcionario = Funcionario::create([
-            'nome' => $request -> input('nome'),
-            'cpf' => $request -> input('cpf'),
-            'senha' =>   $request -> input ('senha'),
-            'funcao' => $request -> input('funcao')
+            'nome' => $request->input('nome'),
+            'cpf' => $request->input('cpf'),
+            'senha' =>   $request->input('senha'),
+            'funcao' => $request->input('funcao')
         ]);
-        return $mensagem_funcionario = "Funcionario cadastrado com sucesso" ;
+        return $mensagem_funcionario = "Funcionario cadastrado com sucesso";
     }
 }

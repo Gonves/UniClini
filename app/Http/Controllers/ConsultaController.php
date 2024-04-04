@@ -12,14 +12,14 @@ class ConsultaController extends Controller
         return view('consulta.index', compact('consulta'));
     }
     public function create(){
-        return view('consulta.create');
+        return view('Consulta.create');
     }
-    public function store(Request $resquest){
+    public function store(Request $request){
         Consulta::create([
-            'nome_consulta' => $resquest -> nome_consulta,
-            'descricao_consulta' => $resquest -> descricao_consulta,
+            'nome_consulta' => $request -> input('nome_consulta'),
+            'descricao_consulta' => $request -> input('descricao_consulta'),
         ]) ;
-        return redirect()->route('consulta_index');
+        return $mensagem_consulta = "Consulta cadastrada com sucesso";
     }
     public function update(Request $request, $id)
     {

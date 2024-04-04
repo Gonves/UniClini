@@ -16,6 +16,7 @@ return new class extends Migration
             $table -> string('nome');
             $table -> string('email')->unique();
             $table -> string('cpf')->unique();
+            $table -> string ('plano_saude');
 
 
             $table->timestamps();

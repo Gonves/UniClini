@@ -13,6 +13,7 @@ class Paciente extends Model
         'nome',
         'email',
         'cpf',
+        'plano_saude',
 
 
     ];
